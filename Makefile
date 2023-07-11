@@ -9,3 +9,6 @@ db-setup:
 
 install:
 	npm install
+
+run:
+	deno run -A db-export.js

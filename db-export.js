@@ -1,4 +1,3 @@
-import { pipeline } from "node:stream/promises";
 import pg from "pg";
 import pgCopyStreams from "pg-copy-streams";
 
@@ -6,25 +5,26 @@ const pool = new pg.Pool({ user: "root", password: "123", database: "vaca" });
 const client = await pool.connect();
 const tables = ["users", "posts"];
 
+await Deno.mkdir("tmp/", { recursive: true });
+
 for (const table of tables) {
 	console.log(table);
-	const stream = client.query(pgCopyStreams.to(`COPY ${table} TO STDOUT CSV HEADER`));
-	// await pipeline(stream, process.stdout);
-	// stream.end();
-
+	const query = `COPY ${table} TO STDOUT CSV HEADER`;
+	const stream = client.query(pgCopyStreams.to(query));
+	const file = await Deno.create(`tmp/${table}.csv`);
 	await new Promise((resolve, reject) => {
+		stream.on("data", (chunk) => file.write(chunk));
 		stream.on("end", resolve);
 		stream.on("error", reject);
-		pipeline(stream, process.stdout);
 	});
-
+	file.close();
 	console.log("end of", table);
 }
 
 console.log("done");
 
-// client.release();
-// await pool.end();
+client.release();
+await pool.end();
 
 // import process from "process";
 
