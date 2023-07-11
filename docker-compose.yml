@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  postgres:
+    image: postgres:13.3-alpine
+    command: postgres -c log_connections=true -c log_disconnections=true -c log_statement=all
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: "123"
+    restart: "no"
+
+volumes:
+  postgres_data:
