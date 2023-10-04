@@ -1,0 +1,95 @@
+    1  curl -fsSL https://deno.land/x/install/install.sh | sh
+    2  nano ~/.bashrc
+    3  exit
+    4  deno --version
+    5  deno upgrade
+    6  ls -la
+    7  npm create
+    8  npm create vite@latest
+    9  which vite
+   10  vite
+   11  deno run -A .
+   12  cd vite-project/
+   13  deno run -A .
+   14  deno run -A main.js 
+   15  lsb_release 
+   16  lsb_release -a
+   17  cat /etc/*release
+   18  cd ..
+   19  ls -la
+   20  deno run -A npm:vite
+   21  cat /etc/*release
+   22  cd ..exit
+   23  ext
+   24  exit
+   25  deno run -A npm:create-vite
+   26  cd vaca
+   27  deno run -A npm:vite main.js 
+   28  uptime
+   29  clear
+   30  env
+   31  exit
+   32  deno run -A npm:vite --help
+   33  deno compile -A npm:vite 
+   34  ls -la
+   35  ls -lah
+   36  ./vite --help
+   37  scp
+   38  ls -la
+   39  scp README.md me@annie.memiux.com:
+   40  sftp
+   41  sftp me@annie.memiux.com
+   42  deno compile --help
+   43  deno compile -A --target=x86_64-apple-darwin npm:vite
+   44  ls -la
+   45  ./vite
+   46  file vite
+   47  deno install --help
+   48  ls -la
+   49  ls -la .vite
+   50  rm -rf .vite vaca vite-project/
+   51  ls -la
+   52  git status
+   53  git diff
+   54  git add .
+   55  git status
+   56  git commit -m "Add README"
+   57  git remote -v
+   58  ls -la
+   59  exit
+   60  npm run start
+   61  make
+   62  docker compose down
+   63  exit
+   64  node --help
+   65  node db-ping.js 
+   66  node db-copy.js 
+   67  node db-copy.js
+   68  node db-export.js
+   69  git add .
+   70  git status
+   71  git diff --cached
+   72  git log
+   73  git commit -m "Add prettier"
+   74  node db-export.js
+   75  which deno
+   76  deno upgrade
+   77  deno run -A import process from "node:process";db-export.js 
+   78  deno run -A db-export.js 
+   79  node db-export.js 
+   80  deno run -A db-export.js 
+   81  git status
+   82  git add .
+   83  git status
+   84  git commit -m "wip"
+   85  git commit --amend  -m "add  db-export"
+   86  git commit --amend  -m "add db-export"
+   87  git log
+   88  exit
+   89  history
+   90  git status
+   91  git add .
+   92  git status
+   93  git log
+   94  git push
+   95  history > history.txt
