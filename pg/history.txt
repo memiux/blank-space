@@ -1,0 +1,208 @@
+    1  curl -fsSL https://deno.land/x/install/install.sh | sh
+    2  nano ~/.bashrc
+    3  exit
+    4  deno --version
+    5  deno upgrade
+    6  ls -la
+    7  npm create
+    8  npm create vite@latest
+    9  which vite
+   10  vite
+   11  deno run -A .
+   12  cd vite-project/
+   13  deno run -A .
+   14  deno run -A main.js
+   15  lsb_release
+   16  lsb_release -a
+   17  cat /etc/*release
+   18  cd ..
+   19  ls -la
+   20  deno run -A npm:vite
+   21  cat /etc/*release
+   22  cd ..exit
+   23  ext
+   24  exit
+   25  deno run -A npm:create-vite
+   26  cd vaca
+   27  deno run -A npm:vite main.js
+   28  uptime
+   29  clear
+   30  env
+   31  exit
+   32  deno run -A npm:vite --help
+   33  deno compile -A npm:vite
+   34  ls -la
+   35  ls -lah
+   36  ./vite --help
+   37  scp
+   38  ls -la
+   39  scp README.md me@annie.memiux.com:
+   40  sftp
+   41  sftp me@annie.memiux.com
+   42  deno compile --help
+   43  deno compile -A --target=x86_64-apple-darwin npm:vite
+   44  ls -la
+   45  ./vite
+   46  file vite
+   47  deno install --help
+   48  ls -la
+   49  ls -la .vite
+   50  rm -rf .vite vaca vite-project/
+   51  ls -la
+   52  git status
+   53  git diff
+   54  git add .
+   55  git status
+   56  git commit -m "Add README"
+   57  git remote -v
+   58  ls -la
+   59  exit
+   60  npm run start
+   61  make
+   62  docker compose down
+   63  exit
+   64  node --help
+   65  node db-ping.js
+   66  node db-copy.js
+   67  node db-copy.js
+   68  node db-export.js
+   69  git add .
+   70  git status
+   71  git diff --cached
+   72  git log
+   73  git commit -m "Add prettier"
+   74  node db-export.js
+   75  which deno
+   76  deno upgrade
+   77  deno run -A import process from "node:process";db-export.js
+   78  deno run -A db-export.js
+   79  node db-export.js
+   80  deno run -A db-export.js
+   81  git status
+   82  git add .
+   83  git status
+   84  git commit -m "wip"
+   85  git commit --amend  -m "add  db-export"
+   86  git commit --amend  -m "add db-export"
+   87  git log
+   88  exit
+   89  history
+   90  git status
+   91  git add .
+   92  git status
+   93  git log
+   94  git push
+   95  history > history.txt
+   96  git add .
+   97  git commit -m "add history"
+   98  git status
+   99  git push
+  100  uptime
+  101  ls -la
+  102  gcc ping.o
+  103  file ping.o
+  104  rm ping.o
+  105  ls -la
+  106  chmod +x a.out
+  107  ./a.out
+  108  file a.out
+  109  ls -la
+  110  pkg-config --libs --cflags libpq
+  111  uname -a
+  112  x86_64-linux-gnu-gcc ping.o -I/usr/include/postgresql -lpq
+  113  ls -lah
+  114  ld a.out
+  115  file a.out
+  116  ./a.out
+  117  cd pg/
+  118  ls -la
+  119  x86_64-linux-gnu-gcc ping.c -I/usr/include/postgresql -lpq
+  120  gcc ping.c
+  121  uname -a
+  122  cat /usr/include/postgresql/libpq
+  123  x86_64-linux-gnu-gcc ping.c -I/usr/include/postgresql -lpq
+  124  ls -la
+  125  ./a.out
+  126  file a.out
+  127  ld a.out
+  128  x86_64-linux-gnu-gcc ping.c -I/usr/include/postgresql -lpq -static
+  129  x86_64-linux-gnu-gcc -static -I/usr/include/postgresql -lpq ping.c
+  130  ls -la
+  131  rm ping.
+  132  rm ping.i
+  133  rm ping.o
+  134  x86_64-linux-gnu-gcc -static -I/usr/include/postgresql -lpq ping.c
+  135  ls -la /usr/include/postgresql
+  136  x86_64-linux-gnu-gcc -static -I/usr/include/postgresql ping.c -lpq
+  137  gcc ping.c /usr/include/postgresql/libecpg.a /usr/include/postgresql/libecpg.a /usr/include/postgresql/libpq.a /usr/include/postgresql/libpgtypes.a
+  138  ls -la /usr/lib/
+  139  apt list --installed | grep dev
+  140  apt list --installed | grep libpq
+  141* ls -la /usr/lib/x86_64-linux-gnu/
+  142  gcc ping.c /usr/include/postgresql/libecpg.a /usr/include/postgresql/libecpg.a /usr/include/postgresql/libpq.a /usr/include/postgresql/libpgtypes.a
+  143  find / -name 'libpgtypes.a;
+  144  find / -name 'libpgtypes.a'
+  145  cd ..
+  146  ls -la
+  147  cd postgres13
+  148  mkdir postgres13
+  149  cd postgres13/
+  150  wget https://ftp.postgresql.org/pub/source/v13.12/postgresql-13.12.tar.gz
+  151  tar -xf postgresql-13.12.tar.gz
+  152  cd postgresql-13.12/
+  153  ./configure
+  154  make
+  155  ./configure --enable-static
+  156  cd ../../pg/
+  157  ls -la
+  158  gcc ping.c
+  159  gcc -lpq ping.c
+  160  gcc -I/usr/include/postgres -lpq ping.c
+  161  gcc -I/usr/include/postgres/ -lpq ping.c
+  162  gcc -I/usr/include/postgres/ ping.c -lpq
+  163  gcc -I/usr/include/postgresql ping.c -lpq
+  164  ls -la
+  165  ./a.out
+  166  LD_LIBRARY_PATH=/workspaces/blank-space/postgres13/postgresql-13.12/src/interfaces/libpq ./a.out
+  167  LD_LIBRARY_PATH=/workspaces/blank-space/postgres13/postgresql-13.12/src/interfaces/libpqs ./a.out
+  168  LD_LIBRARY_PATH=/workspaces/blank-space/postgres13/postgresql-13.12/src/interfaces/libpq ./a.out
+  169  ls -la
+  170  ls -la
+  171  cd ..
+  172  ls -la
+  173  cd pg
+  174  ls -la
+  175  cp ../postgres13/postgresql-13.12/src/interfaces/libpq/libpq.so.5.13 libpq.so.5
+  176  ls -la
+  177  gcc ping.c libpq.so.5
+  178  gcc -I/usr/include/postgres ping.c -lpq libpq.so.5
+  179  gcc -I/usr/include/postgresql ping.c -lpq libpq.so.5
+  180  ls -la
+  181  gcc -o ping ping.c -Llibpq.so.5 -lpq
+  182  gcc -I/usr/include/postgresql -o ping ping.c -Llibpq.so.5 -lpq
+  183  ls -la
+  184  gcc -I/usr/include/postgresql -o ping ping.c -L./libpq.so.5 -lpq
+  185  ls -la
+  186  gcc -I/usr/include/postgresql -o ping ping.c -Llidbpq.so.5 -lpq
+  187  pwd
+  188  gcc -I/usr/include/postgresql -L/workspaces/blank-space/pg/libpq.sp.5 -o ping ping.c -lpq
+  189  ls -la
+  190  rm a.out ping
+  191  ls -la
+  192  gcc --help
+  193  gcc -c ping.c
+  194  gcc -c -I/usr/include/postgresql ping.c
+  195  ls -la
+  196  ld -relocatable libpq.so.5 -o foo.o
+  197  ls -la
+  198  gcc libpq.so.5 ping.o -o ping
+  199  gcc -I/usr/include/postgresql libpq.so.5 ping.o -o ping
+  200  gcc -I/usr/include/postgresql ping.o -o ping
+  201  gcc -I/usr/include/postgresql ping.o -lpq -o ping
+  202  ls -la
+  203  gcc -I/usr/include/postgresql ping.o libpq.so.5 -lpq -o ping
+  204  ls -la
+  205  gcc -I/usr/include/postgresql libpq.so.5 ping.o -lpq -o ping
+  206  ls -la
+  207  ./ping
+  208  ldd ping
